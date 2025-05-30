@@ -19,7 +19,7 @@ public class Main {
         int c = scanner.nextInt();
         System.out.println(c);*/
 
-        /*case-02*/
+        /*  *//*case-02*//*
 
         do {
             int N = scanner.nextInt();
@@ -35,6 +35,19 @@ public class Main {
                     System.out.println("Not Weird");
                 }
             }
-        } while (scanner.hasNextInt());
+        } while (scanner.hasNextInt());*/
+
+        /*case-03*/
+        while (scanner.hasNextInt()) {
+            int i = scanner.nextInt();
+            double d = scanner.nextDouble();
+            scanner.nextLine();
+            String s = scanner.nextLine();
+
+            System.out.println("String: " + s);
+            System.out.println("Double: " + d);
+            System.out.println("Int: " + i);
+        }
+        scanner.close();
     }
 }
