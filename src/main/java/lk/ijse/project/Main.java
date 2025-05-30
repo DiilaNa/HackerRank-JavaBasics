@@ -3,9 +3,10 @@ package lk.ijse.project;
 import java.util.Scanner;
 
 public class Main {
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        /*case-01*/
+        /*  *//*case-01*//*
 
         Scanner scanner = new Scanner(System.in);
 
@@ -16,8 +17,24 @@ public class Main {
         System.out.println(b);
 
         int c = scanner.nextInt();
-        System.out.println(c);
+        System.out.println(c);*/
 
+        /*case-02*/
 
+        do {
+            int N = scanner.nextInt();
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+            if (N % 2 == 1) {
+                System.out.println("Weird");
+            } else {
+                if ((N > 2 && N < 5)) {
+                    System.out.println("Not Weird");
+                } else if (N > 6 && N <= 20) {
+                    System.out.println("Weird");
+                } else if (N > 20) {
+                    System.out.println("Not Weird");
+                }
+            }
+        } while (scanner.hasNextInt());
     }
 }
