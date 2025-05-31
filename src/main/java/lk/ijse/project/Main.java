@@ -37,7 +37,7 @@ public class Main {
             }
         } while (scanner.hasNextInt());*/
 
-        /*case-03*/
+       /* *//*case-03*//*
         while (scanner.hasNextInt()) {
             int i = scanner.nextInt();
             double d = scanner.nextDouble();
@@ -48,6 +48,17 @@ public class Main {
             System.out.println("Double: " + d);
             System.out.println("Int: " + i);
         }
-        scanner.close();
+        scanner.close();*/
+
+     /*  *//* case-04*//*
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("================================");
+        for(int i=0;i<3;i++){
+            String s1=sc.next();
+            int x=sc.nextInt();
+            System.out.printf("%-15s%03d\n", s1, x);
+        }
+        System.out.println("================================");*/
     }
 }
