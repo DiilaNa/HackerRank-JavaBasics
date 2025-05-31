@@ -1,11 +1,14 @@
 package lk.ijse.project;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         /*  *//*case-01*//*
 
         Scanner scanner = new Scanner(System.in);
@@ -59,6 +62,19 @@ public class Main {
             int x=sc.nextInt();
             System.out.printf("%-15s%03d\n", s1, x);
         }
-        System.out.println("================================");*/
+        System.out.println("================================");
+        */
+
+        /*case - 05*/
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+
+        for (int i = 1; i <= 10; i++) {
+            int r = N * i ;
+            System.out.println(N +" x "+ i +" = " + r);
+        }
+
+        bufferedReader.close();
     }
 }
